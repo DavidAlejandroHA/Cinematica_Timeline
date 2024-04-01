@@ -85,4 +85,9 @@ public class MovementController : MonoBehaviour
             movimientoPersonaje.y = velocidadGravedad;
         }
     }
+
+    public void setMovimiento(bool habilitarMov)
+    {
+        controlHabilitado = habilitarMov;
+    }
 }
