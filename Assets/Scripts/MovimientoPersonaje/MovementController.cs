@@ -35,7 +35,7 @@ public class MovementController : MonoBehaviour
         float vertical = controlHabilitado ? Input.GetAxis("Vertical") : 0f;
 
         // Controlando si intenta correr
-        if (Input.GetKey(KeyCode.R))
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             speed = originalSpeed + 4f;
         }
@@ -79,7 +79,7 @@ public class MovementController : MonoBehaviour
 
     private void comprobarSalto()
     {
-        if (characterController.isGrounded && Input.GetKey(KeyCode.Space))
+        if (characterController.isGrounded && Input.GetKey(KeyCode.Space) && controlHabilitado)
         {
             velocidadGravedad = fuerzaSalto;
             movimientoPersonaje.y = velocidadGravedad;
