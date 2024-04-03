@@ -5,6 +5,7 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
+    public GameObject panelFinal;
     public TextMeshProUGUI objetivoTextMesh;
     public static UIManager Instance { get; private set; }
 
@@ -35,5 +36,10 @@ public class UIManager : MonoBehaviour
     public void cambiarTextoObjetivos(string texto)
     {
         objetivoTextMesh.text = texto;
+    }
+
+    public void mostrarTextoFinal()
+    {
+        panelFinal.SetActive(true);
     }
 }
