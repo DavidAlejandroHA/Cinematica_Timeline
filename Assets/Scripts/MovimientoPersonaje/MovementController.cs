@@ -15,8 +15,8 @@ public class MovementController : MonoBehaviour
     Vector3 movimientoPersonaje;
     private float velocidadGravedad = 1f;
     private float gravedadMagnitud = -9.81f;
-    private float gravedadMultiplicador = 1f;
-    public float fuerzaSalto = 15f;
+    private float gravedadMultiplicador = 0.75f;
+    public float fuerzaSalto;
 
     private bool controlHabilitado;
 
